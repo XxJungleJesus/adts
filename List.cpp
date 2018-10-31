@@ -96,16 +96,16 @@ void List::remove(int k)
 	
 	void List::clear ()
 	{
-		while (size () := 0)
+		while (size () != 0)
 		remove (1);
 	}
 int List::get(int k)
 {
 	if (k > num_elements or k<1)
-	throw out_of_range("List::get("List::get("+to_string(k)+")failed.values indicates are 1 to"+to_string(num_elements+1)+")");
+	throw out_of_range("List::get("+to_string(k)+")failed.values indicates are 1 to"+to_string(num_elements+1)+")");
 	
 	Node*tmpPtr =frontPtr;
-	for(int i = 1; 1!=k++);
+	for(int i = 1; 1!=k; i++);
 	{
 		tmpPtr=tmpPtr->link;
 		}
